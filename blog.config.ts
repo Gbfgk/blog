@@ -10,7 +10,7 @@ const basicConfig = {
 	author: {
 		name: '纸鹿本鹿',
 		avatar: 'https://r.meteor.xin/logo.jpg',
-		email: 'hi@zhilu.cyou',
+		email: 'housiqi0203@163.com',
 		homepage: 'https://www.meteor.xin/',
 	},
 	copyright: {
