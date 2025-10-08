@@ -8,7 +8,7 @@ const basicConfig = {
 	// 长 description 利好于 SEO
 	description: '小众综合网站，集博客、云服务、网络安全、应用推荐与友链等内容于一体，提供多元化的信息服务。',
 	author: {
-		name: '纸鹿本鹿',
+		name: '陨辉',
 		avatar: 'https://r.meteor.xin/logo.jpg',
 		email: 'housiqi0203@163.com',
 		homepage: 'https://www.meteor.xin/',
@@ -55,7 +55,29 @@ const blogConfig = {
 		robotsNotIndex: ['/preview', '/previews/*'],
 	},
 
+	/** 博客 Atom 订阅源 */
+	feed: {
+		/** 订阅源最大文章数量 */
+		limit: 50,
+		/** 订阅源是否启用XSLT样式 */
+		enableStyle: true,
+	},
 
+	/** 向 <head> 中添加脚本 */
+	scripts: [
+		// 自己部署的 Umami 统计服务
+		{ 'src': 'https://zhi.zhilu.cyou/zhi.js', 'data-website-id': 'a1997c81-a42b-46f6-8d1d-8fbd67a8ef41', 'defer': true },
+		// 自己网站的 Cloudflare Insights 统计服务
+		{ 'src': 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "97a4fe32ed8240ac8284e9bffaf03962"}', 'defer': true },
+		// Twikoo 评论系统
+		{ src: 'https://lib.baomitu.com/twikoo/1.6.44/twikoo.min.js', defer: true },
+	],
+
+	/** 自己部署的 Twikoo 服务 */
+	twikoo: {
+		envId: 'https://twikoo.zhilu.cyou/',
+		preload: 'https://twikoo.zhilu.cyou/',
+	},
 }
 
 /** 用于生成 OPML 和友链页面配置 */
