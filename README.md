@@ -1,4 +1,16 @@
-# 纸鹿摸鱼处
+# 警告：此项目已经弃用
+
+我们在保留设计风格的同时，向更加简单、**易于部署**的纯静态项目开发。
+
+没写完，暂时是个饼
+
+详见 [源码](https://github.com/Gbfgk/blog-html) (官网)[https://apps.meteor.xin/blog]
+
+
+
+
+
+## 纸鹿摸鱼处
 
 [![框架](https://img.shields.io/badge/框架-Nuxt-00DC82?logo=Nuxt.js)](https://nuxt.com/)
 [![CMS](https://img.shields.io/badge/CMS-Nuxt%20Content-00DC82?logo=Nuxt.js)](https://content.nuxt.com/)
